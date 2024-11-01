@@ -1,5 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-export default defineNuxtConfig({
+module.exports = {
   app: {
     head: {
       title: "justTitle",
@@ -243,18 +243,19 @@ export default defineNuxtConfig({
       ],
     },
   },
-  // pwa: {
-  //   meta: {
-  //     title: "TestTitle",
-  //     author: "Ya",
-  //     mobileAppIOS: true,
-  //     theme_color: "red",
-  //   },
-  //   manifest: {
-  //     name: "TestNameManifest",
-  //     short_name: "TestManifest",
-  //     description: "none",
-  //     lang: "en",
-  //   },
-  // },
-});
+  modules: ['@nuxtjs/pwa'],
+  pwa: {
+    meta: {
+      title: "TestTitle",
+      author: "Ya",
+      mobileAppIOS: true,
+      theme_color: "red",
+    },
+    manifest: {
+      name: "TestNameManifest",
+      short_name: "TestManifest",
+      description: "none",
+      lang: "en",
+    },
+  },
+};
