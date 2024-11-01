@@ -11,7 +11,7 @@ module.exports = {
       ],
       link: [
         { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
-        // { rel: "apple-touch-icon", href: "static/screens/apple-icon-180.png" },
+        { rel: "apple-touch-icon", href: "static/screens/apple-icon-180.png" },
         {
           rel: "apple-touch-startup-image",
           href: "static/screens/apple-splash-2048-2732.jpg",
@@ -243,7 +243,7 @@ module.exports = {
       ],
     },
   },
-  modules: ['@nuxtjs/pwa'],
+  buildModules: ['@nuxtjs/pwa'],
   pwa: {
     meta: {
       title: "TestTitle",
